@@ -46,13 +46,13 @@ function App() {
   return (
     <div className="App">
       <button onClick={SaveFile}>Save</button>
+      <button onClick={HandlePreview}>Preview  </button>
       <input
         type="file"
         id="fileinput"
         onChange={LoadFile}
         className="cfileinput"
       />
-      <button onClick={HandlePreview}>Preview</button>
       <div className="Editors">
         <TextArea preview={preview} HandleChange={HandleChange} data={data} />
         <MdArea preview={preview} data={data} />
