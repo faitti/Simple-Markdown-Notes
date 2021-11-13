@@ -6,7 +6,10 @@ const createWindow = () => {
   let window = new BrowserWindow({
     width: 800,
     height: 800,
+    transparent: true,
+    frame: false,
     autoHideMenuBar: true,
+    vibrancy: "ultra-dark",
     webPreferences: {},
   });
 
