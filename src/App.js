@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <button onClick={SaveFile}>Save</button>
-      <button onClick={HandlePreview}>Preview  </button>
+      <button onClick={HandlePreview}>Preview </button>
       <input
         type="file"
         id="fileinput"

@@ -27,15 +27,19 @@ html {
 .App button {
   font-family: "JetBrains Mono", monospace;
   color: white;
-  width: 8%;
+  margin-right: 1%;
   border: none;
+}
+
+.App button:hover {
+  text-decoration: underline;
 }
 
 .App .cfileinput::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.App input[type="file"] {
+.App input {
   color: #121213;
 }
 
@@ -45,17 +49,25 @@ html {
   color: white;
 }
 
-.texta {
-  width: 50%;
+.App .cfileinput:hover {
+  text-decoration: underline;
+}
+
+.App .texta {
+  width: calc(40% - 1px);
+  max-width: 50%;
   padding: 20px;
   resize: none;
   color: white;
   border: none;
+  border-right: 1px solid white;
   outline: none;
   font-family: "JetBrains Mono", monospace;
 }
 
 .mdown {
+  max-width: 60%;
+  width: 60%;
   height: 100vh;
   padding: 8px;
   outline: none;
@@ -63,9 +75,11 @@ html {
 }
 
 .mdown .edit {
-  width: 50%;
+  max-width: 60%;
+  width: 0%;
 }
 
 .mdown .preview {
+  max-width: 100%;
   width: 100%;
 }
